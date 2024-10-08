@@ -1,5 +1,5 @@
 let listaNumerosSorteados = [];
-let numeroLimite = 10;
+let numeroLimite = 50;
 let numeroSecreto = gerarNumero();
 let tentativas = 1;
 
@@ -11,7 +11,7 @@ function exibirTexto(tag, texto) {
 
 function exibirMensagemInicial() {
     exibirTexto('h1', 'Jogo do número secreto.');
-    exibirTexto('p', 'Selecione um número entre 1 e 10');
+    exibirTexto('p', `Selecione um número entre 1 e ${numeroLimite}`);
 }
 
 exibirMensagemInicial()
